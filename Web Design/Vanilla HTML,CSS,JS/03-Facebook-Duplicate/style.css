@@ -26,7 +26,7 @@ input[type="password"]{
 }
 label[for="pass1"]{
 	position: relative;
-	left:105px;
+	left:90px;
 }
 input[type="submit"]{
 	position:relative;
@@ -40,13 +40,14 @@ input[type="submit"]{
 input[type="submit"]:hover{
 transform: scale(2);
 }
-label{
+.l1{
 	color:white;
-	font-family: impact;
+	font-family: Helvetica	;
 }
 a{
 	position: absolute;
-	left:72%;
+	left:67%;
+	top:40px;
 	color:#9cb4d8;
 	text-decoration: none;
 
@@ -74,10 +75,10 @@ a:hover{
 .signup input[type="text"]
 {
 	width: 30%;
-	height:30px;
-	border-radius: 15px;
+	height:20px;
+	border-radius: 10px;
 	margin: 7px;
-	padding: 15px;
+	padding: 5px;
 }
 #w
 {
@@ -88,4 +89,34 @@ a:hover{
 	color:black;
 	position: relative;
 	left:0px;
+}
+.l2{
+	color:black;
+}
+.signup input[type="password"]{
+	height:20px;
+	width:30%;
+	margin:7px;
+	padding:5px;
+	position: relative;
+	left:0px;
+	border-radius: 10px;
+}
+.signup label{
+	font-size: 20px;
+	color:black;
+	position: relative;
+	left:10px;
+}
+.signup input[type="date"]{
+	height: 20px;
+	width:30%;
+	margin:7px;
+	padding:5px;
+	border-radius: 10px;
+}
+img{
+	position: absolute;
+	top:150px;
+	left:100px;
 }
