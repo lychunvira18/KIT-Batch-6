@@ -1,0 +1,131 @@
+*
+{
+	margin: 0px;
+	padding:0px;
+}
+.top{
+	width: 100%;
+	height:75px;
+	background-color: rgb(59, 89, 152);
+}
+h1{
+	font-family: Helvetica;
+	position: relative;
+	left:5%;
+	top:30%;
+	color:white;
+}
+.d1{
+	position: absolute;
+	left:60%;
+	top:1%;
+}
+input[type="password"]{
+	position: relative;
+	left:15px;
+}
+label[for="pass1"]{
+	position: relative;
+	left:90px;
+}
+input[type="submit"]{
+	position:relative;
+	left:7%;
+	color:white;
+	background-color:#9cb4d8;
+	border:solid 0px;
+	width:50px;
+	transition: linear 0.2s;
+}
+input[type="submit"]:hover{
+transform: scale(2);
+}
+.l1{
+	color:white;
+	font-family: Helvetica	;
+}
+a{
+	position: absolute;
+	left:67%;
+	top:40px;
+	color:#9cb4d8;
+	text-decoration: none;
+
+}
+a:hover{
+	text-decoration: underline;
+}
+.d2{
+	position: relative;
+	width:60%;
+}
+.bottomright{
+	position: absolute;
+	top:75px;
+	left:50%;
+	background-color: rgb(233, 235, 238);
+	width:50%;
+	height:100%;
+}
+.signup{
+	position: relative;
+	left:15px;
+	top:20px;
+}
+.signup input[type="text"]
+{
+	width: 30%;
+	height:20px;
+	border-radius: 5px;
+	margin: 7px;
+	padding: 5px;
+}
+#w
+{
+	width:64%;
+}
+.h2{
+	font-family:verdana;
+	color:black;
+	position: relative;
+	left:0px;
+}
+.l2{
+	color:black;
+}
+.signup input[type="password"]{
+	height:20px;
+	width:30%;
+	margin:7px;
+	padding:5px;
+	position: relative;
+	left:0px;
+	border-radius: 5px;
+}
+.signup label{
+	font-size: 20px;
+	color:black;
+	position: relative;
+	left:10px;
+}
+.signup input[type="date"]{
+	height: 20px;
+	width:30%;
+	margin:7px;
+	padding:5px;
+	border-radius: 5px;
+}
+img{
+	position: absolute;
+	top:150px;
+	left:100px;
+}
+#r1{
+	position: relative;
+	left:30px;
+
+}
+#la1{
+	position: relative;
+	left:40px;
+}

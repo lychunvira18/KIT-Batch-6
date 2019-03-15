@@ -1,7 +1,7 @@
 # Welcome to **KIT Batch 6** *Community Repository*
 ## **Rules :** 
-### 1. Please **READ** rules!
-> Self-explanatory! Please for the love of god **READ** the rules!
+### 1. Please **<span style="color:red">READ</span>** rules!
+> Self-explanatory! Please for the love of god **<span style="color:red">READ</span>** the rules!
 ### 2. COMMENT!
 > Always add comments on everything you do, so that others can understand what you are doing!
 ### 3. Professional do not touch beginner stuff...
