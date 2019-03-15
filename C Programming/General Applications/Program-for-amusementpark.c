@@ -137,6 +137,7 @@ int main()
 	else
 	{
 		printf("Invalid Choice");
+		price = 0;
 	}
 	printf("\nDo you want more(y/n): ");
 	scanf("%s", &ans);
