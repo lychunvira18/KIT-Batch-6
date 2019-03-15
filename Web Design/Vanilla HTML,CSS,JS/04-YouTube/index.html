@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>YouTube</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- make viewport become black after show sidebar -->
+    <div id="blacker" onclick="hide()"></div>
+    <!-- navigation-bar -->
+    <nav class="nav-bar">
+      <!-- left-part -->
+      <div class="left-bar">
+        <button onclick="show()"><i class="fas fa-bars"></i></button>
+        <img src="images/youtube2.png" alt="YouTube" />
+      </div>
+      <!-- center-part -->
+      <div class="center-bar">
+          <input type="text" placeholder="Search...">
+      </div>
+      <!-- right-part -->
+      <div class="right-bar">
+        <a href="#"><i class="fas fa-video" id="i"></i></a>
+        <a href="#"></a><i class="fas fa-th" id="i"></i></a>
+        <a href="#"></a><i class="fas fa-comment" id="i"></i></a>
+        <a href="#"></a><i class="fas fa-bell" id="i"></i></a>
+      </div>
+      <!-- side-bar -->
+      <div class="side-bar" id="sidebar">
+        <div>
+            <button onclick="hide()"><i class="fas fa-bars"></i></button>
+            <img src="images/youtubebar.png" alt="YouTube" />
+        </div>
+      </div>
+    </nav>
+    
+  </body>
+</html>
