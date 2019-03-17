@@ -3,9 +3,9 @@
 /*Conditions: withdraw only if amount to withdraw is multiple of 5 and for each withdrawl charges 0.50*/
 #include<stdio.h>
 #include<conio.h> // conio.h header file called for
-int card();
+int card(); //function declaration
 int input();
-float balance;
+float balance; //global variable
 int inp;
 int main()
 {
@@ -26,17 +26,17 @@ int input()
 	scanf("%d",&inp);
 	if(inp>0&&inp<9)
 	{
-		card();
+		card(); //if the condition is true then this will call the card() function.
 	}
-	else
+	else //if the user input other than 1 to 8 they will have to input again.
 	{
 		printf("Wrong input. Please choose again.\n\n");
 		input();
 	}
 }
-int card()
+int card() 
 {
-	char dec;
+	char dec; 
 	float with;
 	if (inp==1&&balance>=5.50)
 	{
@@ -88,14 +88,14 @@ int card()
 		balance-=with;
 		printf("Balance: $%.2f",balance);
 	}
-	else
+	else //when you want to withdraw more than the amount you have
 	{
 		printf("Insufficient amount\n");
 		printf("Current balance: $%.2f\n",balance);
-	ques:printf("Still want to withdraw? Y/N: ");
+	ques:printf("Still want to withdraw? Y/N: "); 
 		scanf(" %c",&dec);
 		if(dec=='Y'||'y') input();
-		else if(dec=='N'||'n') return 0;
+		else if(dec=='N'||'n') return 0; 
 		else goto ques;
 	}
 }

@@ -45,6 +45,7 @@ void octCon(){
 
 void hexCon(){
   int n=dec;
+  char a;
   i=0;
   do{
     temp[i]=n%16;
@@ -54,29 +55,9 @@ void hexCon(){
   printf("\nThe hexa number is       : ");
   for(j=i-1;j>=0;j--){
     if(i>0){
-      if(temp[j]==10){
-        printf("A");
-      }
-      else if(temp[j]==11)
-      {
-        printf("B");
-      }
-      else if(temp[j]==12)
-      {
-        printf("C");
-      }
-      else if(temp[j]==13)
-      {
-        printf("D");
-      }
-      else if(temp[j]==14)
-      {
-        printf("E");
-      }
-      else if(temp[j]==15)
-      {
-        printf("F");
-      }
+    	if(temp[j]>=10){
+      		a = 55 + temp[j];
+      		printf("%c", a);}
       else{
         printf("%d",temp[j]);
       }

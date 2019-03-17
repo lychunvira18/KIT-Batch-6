@@ -8,6 +8,10 @@ int main(){
 
   do{
     temp=bin%10;
+    if(temp!=0||temp!=1){
+      printf("Invalid Input!");
+      return 0;
+    }
     bin/=10;
     temp*=pow(2,i);
     dec+=temp;
