@@ -1,0 +1,60 @@
+body 
+    {
+        margin: 0;
+        padding: 0;
+    }
+.img-responsive
+    {
+        float: left;
+        width: 46px;
+        height: 46px;
+        left: 5px;
+        top: 7px;
+        position: absolute;
+    }
+.d1
+    {
+        background-color: black;
+        float: left;
+        width: 60px;
+        height: 60px;
+    }
+.triangle
+    {
+        background-color: black;
+        float: left;
+        width: 0px;
+        height: 0px;
+        border-top: 45px solid black;
+        border-left: 40px solid #730808;
+        border-bottom: 15px solid white;
+    }
+ul 
+    {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+    }
+li 
+    {
+        float: left;
+    }
+  
+li a 
+    {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+li a:hover:not(.active) 
+    {
+        background-color: darkslategrey;
+    }
+.active 
+    {
+        background-color: darkmagenta;
+    }
