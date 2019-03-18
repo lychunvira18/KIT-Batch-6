@@ -96,3 +96,274 @@ section article div div.cloud-article-container div {
   text-transform: uppercase;
   letter-spacing: 0.08em;
 }
+section article.rewards-article-container {
+  background-image: url("https://www.starbucks.com/static/images/rewards/MSR-chalk-background.jpg");
+  height: 200px;
+}
+section article div.rewards-article {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+section article div.rewards-article img {
+  max-height: 100px;
+  padding: 50px 0px;
+  float: left;
+}
+section article div div.rewards-article-container p {
+  font-size: 1.1em;
+  line-height: 1.7;
+  color: #fff;
+}
+section article div div.rewards-article-container h1 {
+  font-size: 1.8em;
+  line-height: 1.6;
+  color: #fff;
+}
+section article div div.rewards-article-container {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  padding: 15px 0px;
+}
+section article div div div div {
+  color: #fff;
+  display: inline-block;
+  margin: 5px 5px;
+  border: 1px solid #fff;
+  text-align: center;
+  min-width: 140px;
+  padding: 10px 0px;
+  border-radius: 5px;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 1em;
+}
+section article div div div.rewards-article-button-container {
+  margin-top: 10px;
+}
+section article div div div div.rewards-join-button {
+  background-color: #e3c383;
+  border-color: #e3c383;
+  color: #464646;
+}
+section article.more-rewards-article-container {
+  background-color: #f0efed;
+  height: 540px;
+}
+section article div.more-rewards-article {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 70px 20px;
+}
+section article div.more-rewards-article img {
+  max-width: 100%;
+  height: auto;
+  float: left;
+  margin: 0px 80px;
+}
+section article div div.more-rewards-article-container {
+  color: #0f0f0f;
+  margin: 100px 100px;
+  margin-top: 120px;
+}
+section article div div.more-rewards-article-container h1 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  letter-spacing: 0.02em;
+  line-height: 1.25;
+}
+section article div div.more-rewards-article-container p {
+  font-family: "Crete Round", Georgia, "Times New Roman", serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-top: 10px;
+  font-style: italic;
+}
+section article div div p a {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-decoration-style: dotted;
+  font-weight: 500;
+  font-style: normal;
+}
+section article div div p.readmore-container {
+  margin-top: 10px;
+}
+section article.drinks-article-container {
+  background-color: #1b3c35;
+  height: 540px;
+}
+section article div.drinks-article {
+  max-width: 1360px;
+  margin: 0 auto;
+}
+section article div.drinks-article img {
+  float: left;
+  margin: 60px 20px;
+}
+section article div div.drinks-article-container h1 {
+  color: #fff;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  letter-spacing: 0.02em;
+  line-height: 1.25em;
+  text-transform: uppercase;
+}
+section article div div.drinks-article-container p {
+  color: #fff;
+  font-family: "Crete Round", Georgia, "Times New Roman", serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-top: 10px;
+  font-style: italic;
+}
+section article div div.drinks-article-container a {
+  color: #fff;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-decoration-style: dotted;
+  font-weight: 500;
+  font-style: normal;
+}
+section article div div.drinks-article-container {
+  padding-top: 190px;
+  padding-left: 700px;
+  padding-right: 150px;
+}
+section article.stories-article-container {
+  background-color: #dfece5;
+  height: 540px;
+}
+section article div.stories-article {
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+section article div div.stories-article-container {
+  padding-top: 120px;
+  padding-left: 700px;
+  padding-right: 150px;
+}
+section article div div.stories-article-container h1 {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1.8em;
+  letter-spacing: 0.02em;
+  line-height: 1.25em;
+  text-transform: uppercase;
+}
+section article div div.stories-article-container p {
+  font-family: "Crete Round", Georgia, "Times New Roman", serif;
+  font-size: 1.2em;
+  line-height: 1.4;
+  margin-top: 10px;
+  font-style: italic;
+}
+section article div div.stories-article-container a {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  text-decoration-style: dotted;
+  font-weight: 500;
+  font-style: normal;
+}
+footer div.footer-mail-container {
+  background-color: #f0f0f0;
+  height: 150px;
+}
+footer div div.mail-list-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+footer div nav.social-navbar {
+  float: left;
+  padding-top: 40px;
+  height: 100px;
+}
+footer div nav.social-navbar li {
+  margin-right: ;
+}
+footer div nav.social-navbar li i {
+  font-size: 2em;
+  margin: 0px 20px;
+}
+footer div p {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+footer div.subscribe-container {
+  padding: 30px 0px;
+  padding-left: 550px;
+}
+footer div input {
+  height: 24px;
+  width: 100px;
+  padding-left: 5px;
+  margin-right: 10px;
+}
+footer div input[placeholder="Email address"] {
+  width: 220px;
+}
+footer div button {
+  height: 28px;
+  width: 150px;
+  border-radius: 5px;
+  background-color: #0f0f0f;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.08em;
+}
+footer div p a {
+  font-weight: bold;
+  letter-spacing: 0.03em;
+  text-decoration-style: dotted;
+}
+nav.mega-footer-navbar ul {
+  padding: 60px 40px;
+  padding-bottom: 20px;
+  display: inline-block;
+  vertical-align: text-top;
+}
+nav.mega-footer-navbar ul li {
+  display: block;
+  line-height: 2;
+}
+div.bottom-footer-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+nav ul li.title {
+  font-weight: bold;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 16.8px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding-bottom: 10px;
+}
+nav ul li {
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 1em;
+}
+div.bottom-footer-container img {
+  float: right;
+  width: 15px;
+  padding: 60px 0px;
+}
+div.region-change-container {
+  padding: 10px 40px;
+  padding-bottom: 80px;
+}
+div nav.region-navbar ul li {
+  margin-right: 10px;
+}
+li.region-title {
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+div.region-change-container nav {
+  line-height: 4;
+}
+div.region-change-container footer {
+  line-height: 4;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-size: 10px;
+}
