@@ -40,11 +40,11 @@ int load_game()
 void start_game(gamesPlayed) //games start, top menu
 {
 	if(gamesPlayed==0)
-		printf("Let's start the game!\nType l for low, h for high (l/h) ");
+		printf("let's start the game!\nType l for low, h for high (l/h) or pick from 1-6 (-1 if wrong,+3 if right) \n");
 	else
-		printf("Type (l/h)\n");
+		printf("type (l/h) or 1-6\n");
 }
-char get_user_input() //storing user input l or h
+char get_user_input() //storing user input l or h, now let's try with 1,2,3,4,5,6
 {
 	char input;
 	scanf("%c",&input);
@@ -53,7 +53,7 @@ char get_user_input() //storing user input l or h
 }
 char check_user_input(char input) //making sure that the use input is either l or h
 {
-	while(input!='l'&&input!='h')
+	while(input!='l'&&input!='h'&&input!='1'&&input!='2'&&input!='3'&&input!='4'&&input!='5'&&input!='6')
 	{
 		printf("invalid choice, enter again : ");
 		scanf("%c",&input);
@@ -71,7 +71,7 @@ int generate_random_number() //generating a random number for the dice
 }
 int game_logic(char input,int randomNumber,int score) // complete game logic
 {
-	if(input=='l')
+	if(input=='l') //input low
 	{
 		if(randomNumber<4)
 		{
@@ -83,7 +83,7 @@ int game_logic(char input,int randomNumber,int score) // complete game logic
 			printf("\n+0");
 			return score;
 	}
-	else
+	else if(input=='h') //input high
 	{
 		if(randomNumber>3)
 		{
@@ -95,6 +95,97 @@ int game_logic(char input,int randomNumber,int score) // complete game logic
 			printf("\n+0");	
 			return score;
 	}
+	else if(input=='1') //input 1
+	{
+		if(randomNumber==1)
+		{
+			printf("\n+3");
+			score+=3;
+			return score++;
+		}
+		else
+		{
+			printf("\n-1");
+			score--;	
+			return score;
+		}
+	}
+		else if(input=='2') //input 2
+	{
+		if(randomNumber==2)
+		{
+			printf("\n+3");
+			score+=3;
+			return score++;
+		}
+		else
+		{
+			printf("\n-2");
+			score--;	
+			return score;
+		}
+	}
+		else if(input=='3') //input 3
+	{
+		if(randomNumber==3) 
+		{
+			printf("\n+3");
+			score+=3;
+			return score++;
+		}
+		else
+		{
+			printf("\n-1");
+			score--;	
+			return score;
+		}
+	}
+		else if(input=='4') //input 4
+	{
+		if(randomNumber==4)
+		{
+			printf("\n+3");
+			score+=3;
+			return score++;
+		}
+		else
+		{
+			printf("\n-1");
+			score--;	
+			return score;
+		}
+	}
+		else if(input=='5') //input 5
+	{
+		if(randomNumber==5)
+		{
+			printf("\n+3");
+			score+=3;
+			return score++;
+		}
+		else
+		{
+			printf("\n-1");
+			score--;	
+			return score;
+		}
+	}
+		else
+	{
+		if(randomNumber==6) //input 6
+		{
+			printf("\n+3");
+			score+=3;
+			return score++;
+		}
+		else
+		{
+			printf("\n-1");
+			score--;	
+			return score;
+		}
+	}
+	
 }
 char continue_playing() //Store in user input2 yes or no
 {
