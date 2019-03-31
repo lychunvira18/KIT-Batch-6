@@ -1,0 +1,109 @@
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0 0 0 100;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="1px" height="1px"></canvas>
+    <script>
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+
+
+        drawSortingMethod(10000);
+
+        function drawSortingMethod(times) {
+            var number = [];
+            canvas.width = times;
+            canvas.height = times;
+            generateRandomNumber(number, times);
+            quickSort(number, times);
+            for (i = 1; i <= times; i++) {
+                drawLine(i, number[i], times, "black");
+            }
+            // animateSorting(times, number);
+        }
+
+        function animateSorting(times, number) {
+            var k = 0;
+            var l = 0;
+            var temp = 0;
+            var id = setInterval(frame, 5);
+
+            function frame() {
+                if (k > times) {
+                    clearInterval(id);
+                } else {
+                    if (l > times) {
+                        k++;
+                        l = 0;
+                    } else {
+                        clearLine(k, number[k], times);
+                        if (number[k] < number[l]) {
+                            console.log(k + ":" + l);
+                            temp = number[l];
+                            number[l] = number[k];
+                            number[k] = temp;
+                            // drawLine(k, number[k], times, "red");
+                            for (i = 0; i < times; i++) {
+                                drawLine(i, number[i], times, "black");
+                            }
+                        }
+                        l++;
+                    }
+                }
+            }
+        };
+
+        function clearLine(location, height, times) {
+            context.beginPath();
+            context.strokeStyle = "white";
+            context.lineWidth = 2;
+            context.moveTo(location, times);
+            context.lineTo(location, height);
+            context.stroke();
+        }
+
+        function clearFrame(times) {
+            context.beginPath();
+            context.fillRect(0, 0, times, times);
+
+        }
+
+        function generateRandomNumber(number, times) {
+            for (i = 0; i < times; i++) {
+                number[i] = Math.floor(Math.random() * (times - 10 + 1) + 10);
+            }
+
+        }
+
+        function quickSort(number, num) {
+            for (i = 0; i < num; i++) {
+                for (j = i + 1; j < num; j++) {
+                    if (number[i] < number[j]) {
+                        temp = number[j];
+                        number[j] = number[i];
+                        number[i] = temp;
+                    }
+                }
+            }
+        }
+
+        function drawLine(location, height, times, color) {
+            context.beginPath();
+            context.strokeStyle = color;
+            context.lineWidth = 2;
+            context.moveTo(location, times);
+            context.lineTo(location, height);
+            context.stroke();
+        }
+    </script>
+</body>
+
+</html>

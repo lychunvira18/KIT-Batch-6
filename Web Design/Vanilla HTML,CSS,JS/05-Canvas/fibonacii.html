@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <style>
+        canvas {
+            transform: translate(-50%, -50%);
+            position: absolute;
+            top: 50%;
+            left: 40%;
+        }
+
+        div {
+            position: absolute;
+            top: 20%;
+            left: 70%;
+        }
+
+        div input {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 20px;
+        }
+
+        div button {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="canvas" width="900" height="700"></canvas>
+    <div>
+        <input type="text" id="size" />
+        <button onclick="drawFibonacci()">Draw</button>
+    </div>
+    <script>
+        var number = parseInt(document.getElementById("size").value);
+        var canvas = document.getElementById("canvas");
+        var context = canvas.getContext("2d");
+        var w = canvas.width;
+        var h = canvas.height;
+        var hw = w / 2;
+        var hh = h / 2;
+        var flag = 1;
+        var fibo = [10, 10];
+        for (i = 0; i < 7; i++) {
+            fibo.push(fibo[i] + fibo[i + 1]);
+        }
+        console.log(fibo);
+        drawFibonacci();
+
+        function drawFibonacci() {
+            drawFrame();
+            for (i = 0; i < 10; i++) {
+                drawCurve(fibo[i]);
+            }
+        }
+
+        function drawFrame() {
+            console.log("Frame Finished");
+            context.strokeStyle = "black";
+            context.rect(0, 0, w, h);
+            context.fill();
+        }
+
+
+        function drawCurve(num) {
+            context.translate(hw, hh);
+            for (i = 0; i < num; i++) {
+                context.beginPath();
+                context.translate(0, 0);
+                context.rotate(Math.PI);
+                context.strokeStyle = "white";
+                context.arc(0, 0, fibo[i + 1], Math.PI, -Math.PI / 2);
+                context.arc(0, 0 - (fibo[i + 1] - fibo[i]), fibo[i], -Math.PI / 2, 0);
+                context.stroke();
+            }
+            console.log("Curve Line Finished");
+        }
+    </script>
+</body>
+
+</html>

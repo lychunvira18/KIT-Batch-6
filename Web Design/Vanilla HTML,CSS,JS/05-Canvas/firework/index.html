@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <style>
+        #mycanvas {
+            border: 1px solid white;
+        }
+    </style>
+    <script src="utilities.js"></script>
+    <script src="firework.js"></script>
+</head>
+
+<body bgcolor="white">
+    <canvas id="mycanvas" width="800px" height="800px"></canvas>
+    <script>
+        startGame();
+
+        function startGame() {
+            sky.draw();
+        }
+        var sky = {
+            canvas: document.getElementById("mycanvas"),
+            draw: function () {
+                var context = this.canvas.getContext('2d');
+                context.beginPath();
+                context.fillStyle = 'black';
+                context.rect(0, 0, this.canvas.width, this.canvas.height);
+                context.fill();
+            }
+        }
+    </script>
+</body>
+
+</html>

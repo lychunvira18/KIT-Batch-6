@@ -1,0 +1,113 @@
+<html>
+
+<head>
+  <script>
+    function dr(num, choice) {
+      if (choice == 1) {
+        return (num * Math.PI) / 180;
+      } else {
+        return (num * 180) / Math.PI;
+      }
+    }
+  </script>
+  <style>
+    #mycanvas {
+      border: 1px solid gray;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+  <canvas id="mycanvas" width="500px" height="500px"></canvas>
+  <script>
+    var canvas = document.getElementById("mycanvas");
+    var context = canvas.getContext("2d");
+    var radius = 200;
+
+    var hw = canvas.width / 2;
+    var hh = canvas.height / 2;
+
+    setInterval(drawClock, 1000);
+
+    function drawClock() {
+      drawFrame();
+      drawNumber();
+      drawTime();
+    }
+
+    function drawFrame() {
+      context.beginPath();
+      context.fillStyle = "black";
+      context.rect(hw - 200, hh - 200, 400, 400);
+      context.fill();
+
+      context.beginPath();
+      context.fillStyle = "white";
+      context.arc(hw, hh, 160, 0, 2 * Math.PI);
+      context.fill();
+
+      context.beginPath();
+      context.arc(hw, hh, 10, 0, 2 * Math.PI);
+      context.fillStyle = "black";
+      context.fill();
+    }
+
+    function drawNumber() {
+      context.beginPath();
+      context.font = "25px tahoma";
+      context.fillStyle = "white";
+      context.textAlign = "center";
+      context.textBaseline = "middle";
+      context.translate(hw, hh);
+      var angle;
+      for (i = 1; i < 13; i++) {
+        angle = (i * Math.PI) / 6;
+        context.rotate(angle);
+        context.translate(0, radius * -0.9);
+        context.rotate(-angle);
+        context.fillText(i.toString(), 0, 0);
+        context.rotate(angle);
+        context.translate(0, radius * 0.9);
+        context.rotate(-angle);
+      }
+    }
+
+    function drawTime() {
+      context.beginPath();
+      var date = new Date();
+      var h = date.getHours() % 12;
+      var mn = date.getMinutes();
+      var s = date.getSeconds();
+      drawhand(
+        dr((h * 360) / 12 + (mn * 360) / 12 / 60, 1),
+        radius * 0.4,
+        "black"
+      );
+      drawhand(
+        dr((mn * 360) / 60 + (s * 360) / 60 / 60, 1),
+        radius * 0.6,
+        "black"
+      );
+      drawhand(dr((s * 360) / 60, 1), radius * 0.7, "red");
+      context.translate(-hw, -hh);
+    }
+
+    function drawhand(angle, length, color) {
+      context.beginPath();
+      context.strokeStyle = color;
+      context.rotate(angle);
+      context.moveTo(0, 0);
+      context.lineTo(0, -length);
+      context.rotate(-angle);
+      context.lineCap = "round";
+      context.lineWidth = 4;
+      context.stroke();
+    }
+  </script>
+</body>
+
+</html>

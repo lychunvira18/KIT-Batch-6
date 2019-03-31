@@ -1,0 +1,32 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <canvas id="mycanvas" width="800px" height="800px"></canvas>
+    <script>
+        var screen = {
+            canvas: document.getElementById("mycanvas"),
+            setup: function () {
+                var context = this.canvas.getContext("2d");
+                context.fillStyle = 'black';
+                context.rect(0, 0, this.canvas.width, this.canvas.height);
+                context.fill();
+            }
+        }
+
+        function ball() {
+            this.x = x;
+            this.y = y;
+            this.update = function () {
+
+            }
+        }
+
+        screen.setup();
+    </script>
+</body>
+
+</html>
